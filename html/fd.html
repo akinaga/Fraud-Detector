@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="jp">
+    <meta charset="UTF-8">
+    <title>高精度詐欺検出電脳 v0.1</title>
+    <LINK rel="stylesheet" type="text/css" href="fd.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+</head>
+<body lang="jp">
+<center>
+<table width="600pt">
+
+    <tr><td align="center">
+        <img src="./fd.png">
+    </td></tr>
+
+    <tr><td align="center">
+        <form name="form1" method="post" action="fd.py">
+            <textarea name="target" rows="20" cols="80" style="font-size: 12pt">**original_text**</textarea>
+            <input type="submit" value="Judge!!" style="width: 300px; height: 50px;">
+            <!--<input type="reset" value="Clear" style="width: 100px; height: 50px;">-->
+            <button style='width: 100px; height: 50px; font-family: "Meiryo"; font-size: 16px;' onClick="location.href='fd.py?target=';return false;">Clear</button>
+        </form>
+    </td></tr>
+    <tr><td align="center">
+        <br>
+        <br>
+        <br>
+    </td></tr>
+
+    <tr><td>
+        <!--Insert data-->
+    </td></tr>
+
+
+</table>
+
+</center>
+</body>
+</html>

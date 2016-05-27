@@ -1,0 +1,50 @@
+﻿<html>
+<head><title>Cost Visualizer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="JavaScript">
+<!--
+
+function FormCheck(Form) {
+if (!document.myform.addr.value.match(/^(?:(?:(?:(?:[a-zA-Z0-9_!#\$\%&'*+/=?\^`{}~|\-]+)(?:\.(?:[a-zA-Z0-9_!#\$\%&'*+/=?\^`{}~|\-]+))*)|(?:"(?:\\[^\r\n]|[^\\"])*")))\@(?:(?:(?:(?:[a-zA-Z0-9_!#\$\%&'*+/=?\^`{}~|\-]+)(?:\.(?:[a-zA-Z0-9_!#\$\%&'*+/=?\^`{}~|\-]+))*)|(?:\[(?:\\\S|[\x21-\x5a\x5e-\x7e])*\])))$/i)){
+	alert('Emailの表記がおかしいです。');
+	return false;
+	}
+}
+//-->
+</SCRIPT>
+
+<body>
+<center>
+<table>
+<tr>
+    <td valign=bottom align=center height=200px>
+        <img src="cvlogo.png" width="600">
+    </td>
+</tr>
+<tr>
+    <td valign=middle align=center height=100px>
+		<img src="target.png" height="50px"><img src="aws.png" height="50px">
+    </td>
+</tr>
+</table>
+
+<table>
+<tr>
+	<td valign=middle align=center width=500px>
+		登録するユーザ、もしくはパスワード変更するユーザの<br>Emailアドレスを入力してください。<p>
+        <form action="reg2.py" name="myform" method="POST" target="_self" onSubmit="return FormCheck(this);">
+		<input type="text" name="addr" size="50" style="background-color: lightgray">
+        <input type="submit" value="Request" style="WIDTH: 100px; HEIGHT: 20px; background-color: lightpink">
+        </form>
+	</td>
+</tr>
+<tr>
+	<td valign=middle align=center height=100px>
+     <a href ="index.htm">Back to top</a>
+	</td>
+</tr>
+</table>
+</p>
+</center>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>**title**</title>
+<style type="text/css">
+body {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    font-family: "Meiryo";
+}
+
+textarea {
+    font-family: "Meiryo";
+    font-size: 12px;
+}
+
+input {
+    font-size: 16px;
+}
+
+table {
+    margin: 1px auto;
+    text-align: center;
+    border: 1px;
+}
+
+table td {
+    margin: 1px auto;
+    text-align: center;
+    border: none;
+}
+
+table.t1 {
+    margin: 1px auto;
+    border: none;
+}
+
+table.t1 td {
+    padding: 3px 10px;
+    font-size: 16px;
+    vertical-align: middle;
+    border: solid 1px #92b3d3;
+    /*background: #EFEFEF;*/
+}
+
+table.t1 th {
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    border: solid 1px #92b3d3;
+    background: #44568c;
+    color: #fff;
+}
+
+table.t1 td.tp {
+    text-align: left;
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: solid 1px #92b3d3;
+    background: #EFEFEF;
+}
+
+table.t1 td.tg {
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: solid 1px #92b3d3;
+    background: #EFEFEF;
+    text-align: left;
+}
+
+table.t2 {
+    margin: 1px auto;
+    border: none;
+}
+
+table.t2 td {
+    padding: 3px 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    border: solid 1px #d3708d;
+    background: #ffbad9;
+}
+
+table.t2 th {
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    border: solid 1px #d3708d;
+    background: #ffbad9;
+    color: #ffffff;
+}
+
+table.t2 td.tg {
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: solid 1px #d3708d;
+    background: #ffbad9;
+    text-align: left;
+}
+
+table.t3 {
+    margin: 1px auto;
+    border: none;
+}
+
+table.t3 td {
+    padding: 3px 10px;
+    font-size: 18px;
+    vertical-align: middle;
+    border: solid 1px #bd7422;
+    background: #ffebd6;
+}
+
+table.t3 th {
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    border: solid 1px #bd7422;
+    background: #a65416;
+    color: #ffffff;
+}
+
+table.t3 td.tg {
+    padding: 3px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: solid 1px #bd7422;
+    background: #ffebd6;
+    text-align: left;
+}
+
+.graph {
+    position: relative; /* IE is dumb */
+    width: 300px;
+    border: 1px solid #880000;
+    background: #ee0001;
+    padding: 2px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff44d;
+    white-space: nowrap;
+}
+
+.graph .bar {
+    display: block;
+    position: relative;
+    background: #ae1536;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+    white-space: nowrap;
+}
+
+.graph .bar span {
+    position: absolute;
+    left: 1em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.graph2 {
+    position: relative; /* IE is dumb */
+    width: 300px;
+    border: 1px solid #6a76ae;
+    background: #6a76ae;
+    padding: 2px;
+}
+
+.graph2 .bar2 {
+    display: block;
+    position: relative;
+    background: #6a76ae;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+
+.graph2 .bar2 span {
+    position: absolute;
+    left: 1em;
+}
+
+.graph3 {
+    position: relative; /* IE is dumb */
+    width: 300px;
+    border: 1px solid #bd7422;
+    background: #bd7422;
+    padding: 2px;
+}
+
+.graph3 .bar3 {
+    display: block;
+    position: relative;
+    background: #bd7422;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+
+.graph3 .bar3 span {
+    position: absolute;
+    left: 1em;
+}
+
+.full_content {
+    width: 1013px;
+    height: 600px;
+    position: relative;
+    margin: 2px auto;
+    clear: both;
+}
+
+.menu {
+    width: 143px;
+    height: 54px;
+    background: #bababa;
+    float: left;
+    font-size: 12px;
+    list-style: none;
+    padding: 8px 0 0;
+    margin-left: 2px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #000;
+}
+
+.menu:first-child {
+    margin-left: 0;
+}
+
+.active, .hover {
+    background: #cbcbcb;
+    font-weight: bold;
+}
+
+.content {
+    width: 1002px;
+    /*height:600px;*/
+    border: #e7e7e7 4px solid;
+    background: #FFF;
+    top: 52px;
+    left: 0;
+    padding: 2px;
+    position: absolute;
+}
+
+input:hover {
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+#cy {
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+    left: 1em;
+    top: 1em;
+}
+
+#info {
+    color: #c88;
+    font-size: 1em;
+    position: absolute;
+    z-index: -1;
+    left: 1em;
+    top: 1em;
+}
+
+body,td,th {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-style: normal;
+	font-size: 24px;
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+</style>
+</head>
+
+<body>
+<table width="600px" align="center">
+  <tr>
+    <td  align="center" valign="middle" nowrap ><div align="center">うまく表示されていない場合は<a href="http://voice-solution.cshhage.jp/result/**resultfile**">こちら</a></div></td>
+  </tr>
+    <tr><td align="center" valign="middle" nowrap ><img src="http://voice-solution.cshhage.jp/fd.png" width="300px"></td></tr>
+  <tr>
+    <td height="85" align="center" valign="middle" nowrap bgcolor="#FFA5A7"><p>通話みまもりサービスからのお知らせ</p></td>
+  </tr>
+  <tr>
+    <td height="38" align="center" valign="middle" nowrap><p>下記の通話が発生しましたので、お知らせいたします。</p></td>
+  </tr>
+  <tr class="t1">
+    <td height="120" align="center" valign="middle" nowrap><p>発話：**starttime**<br>
+      終話：**endtime**<br>
+    （通話時間: **duration**）    </p></td>
+  </tr>
+  <tr>
+    <td nowrap><p align="center">この通話は、</p>
+        **score**
+
+    <p align="center">でした。<br>この確率の意味は<b> **msg** </b>ということです。</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" valign="middle" nowrap bgcolor="#C1CCFF">
+        **word**
+    </td>
+  </tr>
+  <tr>
+    <td nowrap><div align="center">すぐに当人に連絡する場合はクリック</div></td>
+  </tr>
+</table>
+</body>
+</html>
